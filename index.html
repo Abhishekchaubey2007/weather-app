@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Weather App</h1>
+
+    <form id="searchForm">
+      <input id="cityInput" type="text" placeholder="Enter city name (e.g. Mumbai)" required />
+      <button type="submit">Search</button>
+    </form>
+
+    <section id="result" class="hidden">
+      <h2 id="cityName"></h2>
+      <p id="temp"></p>
+      <p id="condition"></p>
+      <p id="time"></p>
+    </section>
+
+    <p id="error" class="error hidden"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
